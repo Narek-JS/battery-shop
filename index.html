@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="hy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ակկում-Մարկետ | Ավտոմեքենաների ակումուլյատորներ Երևանում</title>
+    <meta
+      name="description"
+      content="Ակկում-Մարկետ՝ ավտոմեքենաների ակումուլյատորների խանութ Երևանում։ Վաճառք, ստուգում, փոխարինում և տեղադրման աջակցություն։"
+    />
+    <meta
+      name="keywords"
+      content="ակումուլյատորներ Երևան, ավտոմեքենայի մարտկոց, car battery Yerevan, аккумуляторы Ереван, Аккум-Маркет"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta
+      property="og:title"
+      content="Ակկում-Մարկետ | Ավտոմեքենաների ակումուլյատորներ Երևանում"
+    />
+    <meta
+      property="og:description"
+      content="Ակկում-Մարկետ՝ ավտոմեքենաների ակումուլյատորների խանութ Երևանում։ Վաճառք, ստուգում, փոխարինում և տեղադրման աջակցություն։"
+    />
+    <meta property="og:image" content="assets/shop-image-1.jpg" />
+    <meta property="og:locale" content="hy_AM" />
+    <meta property="og:site_name" content="Аккум-Маркет" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ակկում-Մարկետ | Ավտոմեքենաների ակումուլյատորներ Երևանում"
+    />
+    <meta
+      name="twitter:description"
+      content="Ավտոմեքենաների ակումուլյատորների խանութ Երևանում։"
+    />
+    <meta name="twitter:image" content="assets/shop-image-1.jpg" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoPartsStore",
+        "name": "Аккум-Маркет",
+        "description": "Ավտոմեքենաների ակումուլյատորների խանութ Երևանում",
+        "url": "https://example.com",
+        "telephone": "+37499009909",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sevani Street 17/2",
+          "addressLocality": "Yerevan",
+          "postalCode": "0013",
+          "addressCountry": "AM"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "19:00"
+          }
+        ],
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Sevani%20Street%2017%2F2%2C%20Yerevan%200013"
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#home" class="header__logo">
+          <img src="assets/logo.png" alt="Аккум-Маркет logo" />
+        </a>
+
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link">Գլխավոր</a></li>
+            <li><a href="#services" class="nav__link">Ծառայություններ</a></li>
+            <li><a href="#about" class="nav__link">Մեր մասին</a></li>
+            <li><a href="#gallery" class="nav__link">Պատկերասրահ</a></li>
+            <li><a href="#contact" class="nav__link">Կապ</a></li>
+          </ul>
+        </nav>
+
+        <a href="tel:099009909" class="btn btn--green header__cta">
+          <span class="header__cta-icon">📞</span> 099 009909
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge">Երևան, Հայաստան</span>
+          <h1 class="hero__title">
+            Ավտոմեքենաների ակումուլյատորներ<br />
+            <span class="text-green">Երևանում</span>
+          </h1>
+          <p class="hero__sub">
+            Ընտրեք ճիշտ մարտկոցը ձեր մեքենայի համար։ Վաճառում ենք ավտոմեքենաների
+            ակումուլյատորներ, կատարում ենք ստուգում, փոխարինում և տեղադրման
+            աջակցություն։
+          </p>
+          <div class="hero__btns">
+            <a href="tel:099009909" class="btn btn--green btn--lg"
+              >📞 Զանգահարել</a
+            >
+            <a
+              href="https://wa.me/37499009909?text=Բարև%2C%20ուզում%20եմ%20հարցնել%20ավտոմեքենայի%20ակումուլյատորի%20մասին"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline btn--lg"
+            >
+              <svg
+                class="whatsapp-icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              Գրել WhatsApp
+            </a>
+          </div>
+          <div class="hero__badges">
+            <div class="trust-badge"><span>🔋</span> Մարտկոցի ընտրություն</div>
+            <div class="trust-badge"><span>⚡</span> Ստուգում</div>
+            <div class="trust-badge"><span>🔧</span> Տեղադրում</div>
+            <div class="trust-badge"><span>🚀</span> Արագ սպասարկում</div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__img-wrap">
+            <img
+              src="assets/batteries.png"
+              alt="Ավտոմեքենայի ակումուլյատոր"
+              class="hero__img"
+            />
+            <div class="hero__glow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__bg-line"></div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Ինչ ենք առաջարկում</span>
+          <h2 class="section__title">Մեր ծառայությունները</h2>
+          <p class="section__sub">
+            Ամբողջական ծառայություն ձեր ավտոմեքենայի ակումուլյատորի համար
+          </p>
+        </div>
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">🔋</div>
+            <h3 class="service-card__title">
+              Ավտոմեքենայի ակումուլյատորների վաճառք
+            </h3>
+            <p class="service-card__text">
+              Մատակարարում ենք բարձրորակ ակումուլյատորներ բոլոր տեսակի
+              ավտոմեքենաների համար
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">⚡</div>
+            <h3 class="service-card__title">Ակումուլյատորի ստուգում</h3>
+            <p class="service-card__text">
+              Անվճար ախտորոշում՝ ձեր ակումուլյատորի վիճակը պարզելու համար
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🔧</div>
+            <h3 class="service-card__title">Փոխարինում և տեղադրում</h3>
+            <p class="service-card__text">
+              Արագ և պրոֆեսիոնալ փոխարինում ու տեղադրում մեր խանութում
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🎯</div>
+            <h3 class="service-card__title">
+              Ճիշտ մարտկոց ընտրելու օգնություն
+            </h3>
+            <p class="service-card__text">
+              Ըստ մեքենայի մոդելի, հզորության, չափի և բևեռների դիրքի ճիշտ
+              ընտրություն
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🚙</div>
+            <h3 class="service-card__title">
+              SUV, վեն և թեթև բեռնատարների մարտկոցներ
+            </h3>
+            <p class="service-card__text">
+              Լայն տեսականի մասնավոր և կոմերցիոն տրանսպորտի համար
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">💬</div>
+            <h3 class="service-card__title">
+              Խորհրդատվություն / փոխարինման աջակցություն
+            </h3>
+            <p class="service-card__text">
+              Հին մարտկոցի ախտորոշում, հեռախոսային կամ անձնական խորհրդատվություն
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div class="about__content">
+          <div class="section__head section__head--left">
+            <span class="section__label">Ովքե՞ր ենք մենք</span>
+            <h2 class="section__title">Մեր խանութի մասին</h2>
+          </div>
+          <p class="about__text">
+            Ակկում-Մարկետը ավտոմեքենաների ակումուլյատորների խանութ է Երևանում։
+            Մենք օգնում ենք հաճախորդներին ընտրել ճիշտ մարտկոցը՝ ըստ մեքենայի
+            մոդելի, հզորության, չափի և բևեռների դիրքի։ Կարող եք այցելել մեր
+            խանութ, ստուգել ձեր ակումուլյատորը և ստանալ մասնագիտական
+            խորհրդատվություն։
+          </p>
+          <ul class="about__list">
+            <li>
+              <span class="about__check">✓</span> Լայն տեսականի բոլոր մոդելների
+              համար
+            </li>
+            <li><span class="about__check">✓</span> Անվճար ախտորոշում</li>
+            <li>
+              <span class="about__check">✓</span> Մասնագիտական խորհրդատվություն
+            </li>
+            <li><span class="about__check">✓</span> Արագ սպասարկում</li>
+          </ul>
+          <a href="tel:099009909" class="btn btn--green">📞 Զանգահարել հիմա</a>
+        </div>
+        <div class="about__img-wrap">
+          <img
+            src="assets/shop-image-1.jpg"
+            alt="Аккум-Маркет խանութ"
+            class="about__img"
+          />
+          <div class="about__img-accent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Լուսանկարներ</span>
+          <h2 class="section__title">Մեր խանութը</h2>
+          <p class="section__sub">Այցելեք մեզ Երևանում՝ Սևանի փողոց 17/2</p>
+        </div>
+        <div class="gallery__grid">
+          <div class="gallery__item">
+            <img
+              src="assets/shop-image-1.jpg"
+              alt="Аккум-Маркет խանութ 1"
+              loading="lazy"
+            />
+            <div class="gallery__overlay"><span>Մեր խանութը</span></div>
+          </div>
+          <div class="gallery__item">
+            <img
+              src="assets/shop-image-2.jpg"
+              alt="Аккум-Маркет խանութ 2"
+              loading="lazy"
+            />
+            <div class="gallery__overlay">
+              <span>Ակումուլյատորների տեսականի</span>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img
+              src="assets/shop-card.jpg"
+              alt="Аккум-Маркет քարտ"
+              loading="lazy"
+            />
+            <div class="gallery__overlay"><span>Аккум-Маркет</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOCATION / MAP ===== -->
+    <section class="section location" id="location">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Գտնել մեզ</span>
+          <h2 class="section__title">Ինչպես գտնել մեզ</h2>
+        </div>
+        <div class="location__inner">
+          <div class="location__info">
+            <div class="location__detail">
+              <span class="location__icon">📍</span>
+              <div>
+                <p class="location__label">Հասցե</p>
+                <p class="location__value">Sevani Street 17/2, Yerevan 0013</p>
+                <p class="location__value">Սևանի փողոց 17/2, Երևան 0013</p>
+              </div>
+            </div>
+            <div class="location__detail">
+              <span class="location__icon">📞</span>
+              <div>
+                <p class="location__label">Հեռախոս</p>
+                <p class="location__value">
+                  <a href="tel:099009909">099 009909</a>
+                </p>
+              </div>
+            </div>
+            <div class="location__detail">
+              <svg
+                class="location__icon location__icon--wa"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              <div>
+                <p class="location__label">WhatsApp</p>
+                <p class="location__value">099 009909</p>
+              </div>
+            </div>
+            <div class="location__btns">
+              <a href="tel:099009909" class="btn btn--green">📞 Զանգահարել</a>
+              <a
+                href="https://wa.me/37499009909?text=Բարև%2C%20ուզում%20եմ%20հարցնել%20ավտոմեքենայի%20ակումուլյատորի%20մասին"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--wa"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                WhatsApp
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Sevani%20Street%2017%2F2%2C%20Yerevan%200013"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--outline"
+                >🗺 Բացել Google Maps</a
+              >
+            </div>
+          </div>
+          <div class="location__map">
+            <iframe
+              title="Аккум-Маркет location"
+              src="https://www.google.com/maps?q=Sevani%20Street%2017%2F2%2C%20Yerevan%200013&output=embed"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__card-img">
+          <img src="assets/shop-card.jpg" alt="Аккум-Маркет business card" />
+        </div>
+        <div class="contact__info">
+          <div class="section__head section__head--left">
+            <span class="section__label">Կապ</span>
+            <h2 class="section__title">Կապ մեզ հետ</h2>
+          </div>
+          <div class="contact__details">
+            <div class="contact__row">
+              <span class="contact__ico">📞</span>
+              <div>
+                <p class="contact__lbl">Հեռախոս</p>
+                <a href="tel:099009909" class="contact__val">099 009909</a>
+              </div>
+            </div>
+            <div class="contact__row">
+              <svg
+                class="contact__ico contact__ico--svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              <div>
+                <p class="contact__lbl">WhatsApp</p>
+                <a
+                  href="https://wa.me/37499009909?text=Բարև%2C%20ուզում%20եմ%20հարցնել%20ավտոմեքենայի%20ակումուլյատորի%20մասին"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact__val"
+                  >099 009909</a
+                >
+              </div>
+            </div>
+            <div class="contact__row">
+              <span class="contact__ico">📍</span>
+              <div>
+                <p class="contact__lbl">Հասցե</p>
+                <p class="contact__val">Sevani Street 17/2, Yerevan 0013</p>
+              </div>
+            </div>
+            <div class="contact__row">
+              <span class="contact__ico">🕘</span>
+              <div>
+                <p class="contact__lbl">Աշխատանքային ժամեր</p>
+                <p class="contact__val">Երկուշաբթի — Շաբաթ: 09:00 — 19:00</p>
+                <p class="contact__val contact__val--muted">Կիրակի: փակ</p>
+              </div>
+            </div>
+          </div>
+          <p class="contact__note">
+            Խնդրում ենք զանգահարել՝ մարտկոցի առկայությունը ճշտելու համար։
+          </p>
+          <div class="contact__btns">
+            <a href="tel:099009909" class="btn btn--green">📞 Զանգահարել</a>
+            <a
+              href="https://wa.me/37499009909?text=Բարև%2C%20ուզում%20եմ%20հարցնել%20ավտոմեքենայի%20ակումուլյատորի%20մասին"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--wa"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#home"
+            ><img src="assets/logo.png" alt="Аккум-Маркет" class="footer__logo"
+          /></a>
+          <p class="footer__name">Аккум-Маркет</p>
+          <p class="footer__tagline">
+            Ավտոմեքենաների ակումուլյատորներ Երևանում
+          </p>
+        </div>
+        <div class="footer__info">
+          <p><a href="tel:099009909">📞 099 009909</a></p>
+          <p>📍 Sevani Street 17/2, Yerevan 0013</p>
+          <p>🕘 Երկ — Շբթ: 09:00 — 19:00</p>
+        </div>
+        <div class="footer__links">
+          <a href="#home">Գլխավոր</a>
+          <a href="#services">Ծառայություններ</a>
+          <a href="#about">Մեր մասին</a>
+          <a href="#gallery">Պատկերասրահ</a>
+          <a href="#contact">Կապ</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          © <span id="year"></span> Аккум-Маркет. Բոլոր իրավունքները պաշտպանված
+          են։
+        </p>
+      </div>
+    </footer>
+
+    <!-- ===== FLOATING WHATSAPP ===== -->
+    <a
+      href="https://wa.me/37499009909?text=Բարև%2C%20ուզում%20եմ%20հարցնել%20ավտոմեքենայի%20ակումուլյատորի%20մասին"
+      target="_blank"
+      rel="noopener"
+      class="fab-wa"
+      aria-label="WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
