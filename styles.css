@@ -971,9 +971,28 @@ a.contact__val:hover {
   }
 
   /* Header mobile */
+  .header__inner {
+    gap: 12px;
+  }
+
+  .header__logo {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .header__logo img {
+    height: 38px;
+    max-width: 140px;
+    object-fit: contain;
+    object-position: left center;
+  }
+
   .hamburger {
     display: flex;
+    flex-shrink: 0;
+    margin-left: auto;
   }
+
   .header__cta {
     display: none;
   }
