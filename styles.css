@@ -897,6 +897,11 @@ a.contact__val:hover {
   flex-shrink: 0;
 }
 
+/* Hide mobile-only nav actions on desktop */
+.nav__mobile-actions {
+  display: none;
+}
+
 /* ===== RESPONSIVE ===== */
 
 /* Tablet */
@@ -960,69 +965,118 @@ a.contact__val:hover {
   }
 }
 
-/* Mobile */
-@media (max-width: 640px) {
-  :root {
-    --header-h: 64px;
+/* ===== MOBILE HEADER (768px) ===== */
+@media (max-width: 768px) {
+  /* Switch header from fixed height to min-height so the logo is never clipped */
+  .header {
+    height: auto;
+    min-height: var(--header-h);
+    padding: 10px 0;
   }
 
-  .section {
-    padding: 72px 0;
-  }
-
-  /* Header mobile */
+  /* Replace gap+margin-left trick with a proper space-between layout */
   .header__inner {
-    gap: 12px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 20px;
   }
 
+  /* Logo: let it scale naturally, cap width, never crop */
   .header__logo {
-    flex-shrink: 1;
-    min-width: 0;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
   }
 
   .header__logo img {
-    height: 38px;
-    max-width: 140px;
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    max-height: 48px;
     object-fit: contain;
     object-position: left center;
   }
 
-  .hamburger {
-    display: flex;
-    flex-shrink: 0;
-    margin-left: auto;
-  }
-
+  /* Hide desktop phone button */
   .header__cta {
     display: none;
   }
 
+  /* Show hamburger, remove the desktop margin-left:auto (space-between handles it) */
+  .hamburger {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  /* Nav dropdown: slide down from top of screen, sit behind header (z-index 999) */
   .nav {
     position: fixed;
-    top: var(--header-h);
+    top: 0;
     left: 0;
     right: 0;
+    margin-left: 0;
+    padding: calc(var(--header-h) + 8px) 24px 28px;
     background: rgba(5, 7, 6, 0.98);
-    backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--border);
-    padding: 16px 24px 24px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-green);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
     transform: translateY(-110%);
     transition: transform 0.3s ease;
-    margin-left: 0;
     z-index: 999;
   }
   .nav.open {
     transform: translateY(0);
   }
 
+  /* Vertical nav list */
   .nav__list {
     flex-direction: column;
-    gap: 4px;
+    gap: 0;
+    margin-bottom: 8px;
   }
+
   .nav__link {
     display: block;
-    padding: 12px 16px;
-    font-size: 1rem;
+    padding: 14px 8px;
+    font-size: 1.05rem;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav__link:last-child {
+    border-bottom: none;
+  }
+  .nav__link:hover,
+  .nav__link.active {
+    color: var(--green);
+    background: transparent;
+  }
+
+  /* Phone + WhatsApp buttons inside the dropdown */
+  .nav__mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav__mobile-actions .btn {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .section {
+    padding: 72px 0;
   }
 
   /* Hero */
